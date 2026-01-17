@@ -16,7 +16,6 @@ className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md bor
       <img
         src="/src/assets/6ave.png"
         className="h-20 md:h-24 w-auto"
-        alt="6AVE"
       />
     </a>
   </div>
