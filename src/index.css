@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Safe Room - Architectural, Premium Design System
+   Warm neutrals, calm, no military aesthetics */
+
+@layer base {
+  :root {
+    /* Warm cream/beige background palette */
+    --background: 40 33% 96%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 25% 94%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 25% 94%;
+    --popover-foreground: 30 10% 15%;
+
+    /* Warm charcoal primary */
+    --primary: 30 8% 25%;
+    --primary-foreground: 40 33% 96%;
+
+    /* Soft warm gray secondary */
+    --secondary: 35 15% 88%;
+    --secondary-foreground: 30 10% 20%;
+
+    /* Muted warm tones */
+    --muted: 35 12% 90%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Subtle warm accent */
+    --accent: 35 20% 85%;
+    --accent-foreground: 30 10% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 30 10% 25%;
+
+    --radius: 0.25rem;
+
+    /* Custom Safe Room tokens */
+    --warm-cream: 40 33% 96%;
+    --warm-beige: 35 25% 90%;
+    --warm-stone: 35 15% 75%;
+    --warm-charcoal: 30 8% 25%;
+    --warm-dark: 30 10% 15%;
+  }
+
+  .dark {
+    --background: 30 10% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 30 10% 12%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 30 10% 12%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 40 20% 92%;
+    --primary-foreground: 30 10% 10%;
+
+    --secondary: 30 8% 20%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 30 8% 18%;
+    --muted-foreground: 35 10% 60%;
+
+    --accent: 30 8% 22%;
+    --accent-foreground: 40 20% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 8% 22%;
+    --input: 30 8% 22%;
+    --ring: 40 15% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
