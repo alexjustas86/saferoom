@@ -14,7 +14,7 @@ className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md bor
   <div className="flex items-center">
     <a href="/">
       <img
-        src="/src/assets/6ave.png"
+        src="/logo.png"
         className="h-20 md:h-24 w-auto"
       />
     </a>
